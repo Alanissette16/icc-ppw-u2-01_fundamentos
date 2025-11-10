@@ -22,14 +22,17 @@
         <button (click)="addProyecto()">Agregar</button>
     </div>
     <div>
-        <!-- <h3>Listado</h3>
+        <h3>Listado</h3>
         <ul>
             <li>Proyecto 1</li>
-            <li>Proyecto2</li>
-        </ul> -->
+        </ul>
 
         @for (proyecto of proyectos(); track $index) {
             <li>{{proyecto.nombre}} - {{proyecto.descripcion}} </li>
         }
     </div>
+    <listado-proyecto
+        listName="Listado de proyectos" 
+        [proyectos]="proyectos()"
+    > </listado-proyecto>
 </section>

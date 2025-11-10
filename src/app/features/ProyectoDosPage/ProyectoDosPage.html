@@ -1,1 +1,9 @@
-<p>ProyectoDosPage works!</p>,
+<listado-proyecto
+        listName="Listado de proyectos desde Service" 
+        [proyectos]="proyectosService.proyectos()"
+></listado-proyecto>
+
+<p>Aqui deberia estar un componente que agrege al servicio</p>
+<add-proyecto (newProyecto)="proyectosService.addProyecto($event)">
+    
+</add-proyecto>

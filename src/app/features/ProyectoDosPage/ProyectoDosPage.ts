@@ -9,6 +9,7 @@ import { ProyectosService } from './services/proyectos-service';
   templateUrl: './ProyectoDosPage.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
+
 export class ProyectoDosPage { 
 
   proyectosService = inject(ProyectosService);

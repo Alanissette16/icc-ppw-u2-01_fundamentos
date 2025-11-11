@@ -4,6 +4,7 @@
 ></listado-proyecto>
 
 <p>Aqui deberia estar un componente que agrege al servicio</p>
-<add-proyecto (newProyecto)="proyectosService.addProyecto($event)">
-    
-</add-proyecto>
+<add-proyecto 
+(newProyecto)="proyectosService.addProyecto($event)"
+(removeProyecto)="proyectosService.delFirstProyecto()"
+></add-proyecto>

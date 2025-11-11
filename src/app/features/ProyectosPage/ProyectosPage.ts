@@ -37,4 +37,5 @@ export class ProyectosPage {
     this.name.set('');
     this.description.set(''); 
   }
+  
 }

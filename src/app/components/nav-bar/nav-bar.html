@@ -21,9 +21,24 @@
     routerLinkActive="active"
     >ProyectosDos</a>
 
-    <a routerLink="formulario"
+    <!--<a routerLink="formulario"
     routerLinkActive="active"
-    >Formulario</a>
+    >Formulario</a>-->
     
+    <a 
+    [routerLink]="['/formulario/basic']"
+    routerLinkActive="active"
+    >Formulario Básico</a>
+
+    <a 
+    [routerLink]="['/formulario/dynamic']"
+    routerLinkActive="active"
+    >Formulario Dinámicos</a>
+
+    <a 
+    [routerLink]="['/formulario/more']"
+    routerLinkActive="active"
+    >Formulario Más</a>
+
 
 </nav>

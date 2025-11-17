@@ -6,7 +6,7 @@ import { ProyectoDosPage } from "./features/ProyectoDosPage/ProyectoDosPage";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavBar, ProyectosPage, ProyectoDosPage],
+  imports: [RouterOutlet, NavBar],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

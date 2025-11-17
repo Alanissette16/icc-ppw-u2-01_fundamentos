@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { FormularioPage } from './features/formularioPage/formularioPage';
 import { HomePage } from './features/homePage/homePage';
 import { PerfilPage } from './features/perfilPage/perfilPage';
 import { ProyectoDosPage } from './features/ProyectoDosPage/ProyectoDosPage';
@@ -27,9 +26,20 @@ export const routes: Routes = [
         component: ProyectoDosPage
     },
     
+    //{
+    //    path:'formulario',
+    //    component: FormularioPage
+    //}
     {
-        path:'formulario',
-        component: FormularioPage
+        path: 'formulario',
+        loadChildren:
+        () => import ('./features/Formularios/pages/formularios-routes')
+        .then ( m => m.formulariosRoutes )
+    },
+    {
+        path: '**',
+        redirectTo: 'basic',
+                    
     }
 
 ];
